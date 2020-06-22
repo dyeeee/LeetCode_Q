@@ -33,7 +33,7 @@ class Solution:
         # 记录最近重复字符所在的位置+1
         start = 0
         for i in range(len(s)):
-            # 判断当前字符是否在字典中和当前字符的下标是否大于等于最近重复字符的所在位置
+            # 判断当前字符是否在字典中，当前字符的下标是否大于等于最近重复字符的所在位置
             if s[i] in str_dict and str_dict[s[i]] >= start:
                 # 记录当前字符的值+1
                 start = str_dict[s[i]] + 1
